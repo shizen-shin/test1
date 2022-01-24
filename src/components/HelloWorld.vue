@@ -1,5 +1,10 @@
 <template>
   <div class="hello">
+    <UserDetail 
+     id="user-detail"
+     class="testClass"
+     :class="originalClass"
+    />
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -31,10 +36,20 @@
 </template>
 
 <script>
+import UserDetail from './UserDetail'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    UserDetail
+  },
   props: {
     msg: String
+  },
+  data(){
+    return{
+      originalClass: 'my-class'
+    }
   }
 }
 </script>

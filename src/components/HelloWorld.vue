@@ -2,7 +2,7 @@
   <div class="hello">
     <UserDetail 
      id="user-detail"
-     class="testClass"
+     class="testClass1"
      :class="originalClass"
     />
     <h1>{{ msg }}</h1>
